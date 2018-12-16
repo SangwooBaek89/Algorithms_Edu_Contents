@@ -1,0 +1,12 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int h, m, s;
+    scanf("%d:%d:%d", &h, &m, &s);
+    cout << h << "½Ã " << m << "ºÐ " << s << "ÃÊ";
+    return 0;
+}

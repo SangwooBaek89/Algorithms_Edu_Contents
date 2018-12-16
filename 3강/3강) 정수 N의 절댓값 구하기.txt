@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+// 컴파일러가 abs() 함수를 지원하지 않을 시 직접 만들어야 합니다.
+int abs(int a) {
+    if(a < 0) return -a;
+    return a;
+}
+
+int main(void) {
+	int a;
+	cin >> a;
+	cout << abs(a);
+}

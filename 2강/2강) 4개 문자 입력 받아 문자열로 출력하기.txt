@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main(void) {
+	string a = "";
+	char b;
+	cin >> b; a = a + b;
+	cin >> b; a = a + b;
+	cin >> b; a = a + b;
+	cin >> b; a = a + b;
+	cout << a;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+int main(void) {
+	queue<int> q;
+	while (true) {
+		int x;
+		string input;
+		cin >> input;
+		if (input == "PUSH") { cin >> x; q.push(x); }
+		else if (input == "POP") q.pop();
+		else if (input == "STOP") break;
+	}
+	while (!q.empty()) {
+		cout << q.front() << ' ';
+		q.pop();
+	}
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+void calculator(int a, int b) {
+	cout << a << " + " << b << " = " << a + b << '\n';
+	cout << a << " - " << b << " = " << a - b << '\n';
+	cout << a << " * " << b << " = " << a * b << '\n';
+	cout << a << " / " << b << " = " << a / b << '\n';
+}
+
+int main(void) {
+	calculator(10, 3);
+	calculator(15, 2);
+	calculator(18, 4);
+}

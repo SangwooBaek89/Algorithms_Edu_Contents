@@ -1,0 +1,11 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+int main(void) {
+	double a;
+	cin >> a;
+	printf("%.2lf", log10(a));
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main(void) {
+	int a, b, c;
+	cin >> a >> b >> c;
+	printf("%.2lf", (double)(a + b + c) / 3);
+}

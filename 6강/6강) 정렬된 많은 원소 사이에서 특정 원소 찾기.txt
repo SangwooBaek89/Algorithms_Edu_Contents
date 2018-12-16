@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int a[1000001];
+bool founded;
+
+int search(int start, int end, int target) {
+	if (start > end) return -1;
+	int mid = (start + end) / 2;
+	if (a[mid] == target) return mid;
+	else if (a[mid] > target) return search(start, mid - 1, target);
+	else return search(mid + 1, end, target);
+}
+
+int main(void) {
+	int n, target;
+	cin >> n >> target;
+	for (int i = 0; i < n; i++) cin >> a[i];
+	int result = search(0, n - 1, target);
+	if (result != -1) cout << result + 1;
+	else cout << -1;
+}

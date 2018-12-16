@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int number[10];
+
+int main(void) {
+	int n, temp = 0;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		int x;
+		cin >> x;
+		number[x]++;
+		temp += x;
+	}
+	if (temp % 3 == 0 && number[0] >= 2)
+	for (int i = 9; i >= 0; i--)
+		for (int j = 0; j < number[i]; j++) cout << i;
+	else cout << -1;
+}

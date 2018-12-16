@@ -1,0 +1,11 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+int main(void) {
+	double a, b;
+	cin >> a >> b;
+	printf("%.2lf", pow(a, b));
+}

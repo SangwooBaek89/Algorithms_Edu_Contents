@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int pelindrome(string a) {
+	stack<char> s;
+	for (int i = 0; i < a.length(); i++) s.push(a[i]);
+	for (int i = 0; i < a.length(); i++) {
+		if (s.top() != a[i]) return false;
+		s.pop();
+	}
+	return true;
+}
+
+int main()
+{
+    string a;
+    cin >> a;
+    cout << pelindrome(a);
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+string a[1001];
+bool founded;
+
+int main(void) {
+	int n;
+	string target;
+	cin >> n >> target;
+	for (int i = 0; i < n; i++) cin >> a[i];
+	for (int i = 0; i < n; i++) {
+		if (a[i] == target) {
+			cout << i + 1;
+			founded = 1;
+		}
+	}
+	if (!founded) cout << -1;
+}
